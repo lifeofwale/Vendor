@@ -1,0 +1,352 @@
+* , *::before, *::after{
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    font-weight: 300;
+    color:#646669;
+     overflow-x: hidden;
+}
+
+$clr-grey:#777777;
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+
+
+    #sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 100vh;
+
+        &.active {
+            margin-left: -250px;
+        }
+    }
+    
+    #content {
+        width: 100%;
+        min-height: 100vh;
+        transition: all 0.3s;
+
+        .navbar {
+            padding: .8rem 1rem;
+            
+            border: none;
+            border-radius: 0;
+            margin-bottom: 40px;      
+            background: #FFFFFF;
+          
+        }
+    }
+
+
+}
+
+
+// a[data-toggle="collapse"] {
+//     position: relative;
+// }
+
+// .dropdown-toggle::after {
+//     display: block;
+//     position: absolute;
+//     top: 50%;
+//     right: 20px;
+//     transform: translateY(-50%);
+// }
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a.a-s{
+    font-weight: 400;
+}
+#sidebar {
+    /* don't forget to add all the previously mentioned styles here too */
+    background: #646669;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #646669;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    
+}
+sup{
+    font-size: 10px;
+    color:#4ea95a;
+}
+// #sidebar ul p {
+//     color: #fff;
+//     padding: 10px;
+// }
+
+#sidebar ul li.nav-item {
+    color: #fff;
+    padding: 0 2.375rem;
+    position: relative;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.4rem;
+    display: block;
+
+    &.a-s 
+    
+    {
+        display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0.625rem 0 0.625rem 0;
+    color: #646669;
+    -webkit-transition-duration: 0.45s;
+    transition-duration: 0.45s;
+    transition-property: color;
+    -webkit-transition-property: color;
+
+   
+        .icon-bg{
+        
+            margin-right: 0.875rem;
+            background: rgba(194, 244, 219, 0.12);
+            height: 24px;
+            width: 24px;
+            position: relative;
+            z-index: 2;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-radius: 3px;
+            text-align: center;
+        
+    }
+}
+}
+#sidebar ul li{
+    margin-bottom: 1rem;
+    padding: 0 2.375rem;
+
+    & > a.a-s{
+        padding: 1.375rem 0;
+    }
+}
+#sidebar ul li.active {
+position: relative;
+
+    & > a.a-s{
+        color: #fff;
+        font-weight: 600;
+        background-color: #d1352c;
+        border-radius: 200px;
+        box-shadow: 3px 4px 20px rgba(209, 53, 44, 0.2);
+      
+    }
+    
+}
+#sidebar ul li a.a-s:hover {
+    transition: all .4s ease-in-out;
+    background-color: #d1352c;
+    border-radius: 200px;
+    box-shadow: 3px 4px 20px rgba(209, 53, 44, 0.2);
+
+   
+}
+
+ul  a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: none;
+}
+
+//Uitlities
+
+.f-w-b{
+    font-weight: 600;
+}
+.fs-18{
+    font-size: 1.8rem;
+}
+
+.fs-16-b{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:$clr-grey;
+}
+
+.fs-14{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.fs-8{
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.fs-10{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.fs-16{
+    font-size: 1.6rem;
+    color: #232324;
+    font-weight: 600;
+}
+
+
+.fs-24-b{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.bg-bell{
+    background-color: #fcedef;
+}
+.card-custom{
+    padding: 1.8rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(43,43,43,.1), 0 11px 6px -7px rgba(43,43,43,.1);
+     
+        border-top-color: #5969ff !important;
+    
+}
+.border-4{
+    border-radius: .4rem; 
+}
+hr.dash{
+    
+        border:none;
+        border-top:1px dashed #e1e1e1;
+        color:#fff;
+        background-color:#fff;
+        height:1px;
+        width:100%;
+      
+}
+
+//Custom button
+
+button.btn-modern{
+    min-width: 11.5rem;
+    background-color: #76bd87;
+    color:#fff;
+    font-size: 1.4rem;
+    font-weight:300;
+    padding:1rem;
+}
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  button.request {
+    width: 12rem;
+    height: 4.2rem;
+  }
+  button.request .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #02a850;
+    border-radius: 1.625rem;
+  }
+  button.request .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+  }
+  button.request .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  button.request .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  button.request .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0.3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  button:hover .circle {
+    width: 100%;
+  }
+  button:hover .circle .icon.arrow {
+    background: #fff;
+    -webkit-transform: translate(1rem, 0);
+            transform: translate(1rem, 0);
+  }
+  button:hover .button-text {
+    color: #fff;
+  }
+// 
