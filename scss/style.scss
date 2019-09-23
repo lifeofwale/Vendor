@@ -238,6 +238,10 @@ ul  a {
 .bg-bell{
     background-color: #fcedef;
 }
+
+.bg-green{
+    background-color: #76bd87;
+}
 .card-custom{
     padding: 1.8rem;
     border-radius: 5px;
@@ -350,3 +354,11 @@ button {
     color: #fff;
   }
 // 
+
+#calTitle button{
+    line-height: 0% !important;
+}
+
+.mini-cal {
+    background:none !important;
+}

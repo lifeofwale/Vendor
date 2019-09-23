@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mini-event-calendar.min.css">
     <link rel="stylesheet" href="css/style.css">
  
 </head>
@@ -63,6 +64,8 @@
                     </a>
                 </li>
             </ul>
+            <div class="container"><div id="calendar"></div></div>
+
         </nav>
     
     
@@ -112,6 +115,74 @@
                                               </div>
                                               <hr>
                                               <p class="font-weight-normal mt-4">RUNNING LOAN(S)</p>
+                       <div class="progress-loan mt-4">
+                                                  <div class="row mb-2">
+                                                      <div class="col-sm-1">
+                                                           <p class="text-black-50"> <i class="fas fa-plus-square"></i></p>
+                                                      </div>
+                                                      <div class="col-sm-10">
+                                                            <div class="progress" style="height: 20px;">
+                                                                    <div class="progress-bar bg-green" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                    <p class="fs-8 h-100 pt-2" style="line-height: 2rem;">
+                                                                        Personal loan (N200,000)
+                                                                    </p></div>
+                                                                  </div>
+                                                                  <div class="d-flex justify-content-between">
+                                                                    <p class="fs-8">July 2018</p>
+                                                                    <p class="fs-8">Tenor -24 Months</p>
+                                                                    <p class="fs-8">July 2020</p>
+                                                                  </div>
+                                                        </div>
+                                                        <div class="col-sm-1">
+                                                          <p class="text-danger fs-18"><i class="fas fa-stopwatch "></i></p>
+                                                            </div>
+                                                  </div>
+                                                  <div class="row mb-2">
+                                                        <div class="col-sm-1">
+                                                             <p class="text-black-50"> <i class="fas fa-plus-square"></i></p>
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                              <div class="progress" style="height: 20px;">
+                                                                      <div class="progress-bar bg-green" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                                      <p class="fs-8 h-100 pt-2" style="line-height: 2rem;">
+                                                                          Personal loan (N200,000)
+                                                                      </p></div>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between">
+                                                                      <p class="fs-8">July 2018</p>
+                                                                      <p class="fs-8">Tenor -24 Months</p>
+                                                                      <p class="fs-8">July 2020</p>
+                                                                    </div>
+                                                          </div>
+                                                          <div class="col-sm-1">
+                                                            <p class="text-danger fs-18"><i class="fas fa-stopwatch "></i></p>
+                                                              </div>
+                                                    </div>
+                                                    <div class="row mb-2">
+                                                            <div class="col-sm-1">
+                                                                 <p class="text-black-50"> <i class="fas fa-plus-square"></i></p>
+                                                            </div>
+                                                            <div class="col-sm-10">
+                                                                  <div class="progress" style="height: 20px;">
+                                                                          <div class="progress-bar bg-green" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                                          <p class="fs-8 h-100 pt-2" style="line-height: 2rem;">
+                                                                              Personal loan (N200,000)
+                                                                          </p></div>
+                                                                        </div>
+                                                                        <div class="d-flex justify-content-between">
+                                                                          <p class="fs-8">July 2018</p>
+                                                                          <p class="fs-8">Tenor -24 Months</p>
+                                                                          <p class="fs-8">July 2020</p>
+                                                                        </div>
+                                                              </div>
+                                                              <div class="col-sm-1">
+                                                                <p class="text-danger fs-18"><i class="fas fa-stopwatch "></i></p>
+                                                                  </div>
+                                                        </div>
+                                                        <div class="d-flex justify-content-end mt-4">
+                                                                <a href="#" class="fs-8">View more</a>
+                                                            </div>
+                       </div>
                                             </div>
                                           </div>
                             </div>
@@ -200,9 +271,9 @@
                                                             <p class="fs-10">HR</p>
                                                            </div>
                                                     </div>
-                                                  <d class="d-flex justify-content-end">
+                                                  <div class="d-flex justify-content-end">
                                                       <a href="#" class="fs-8">View more</a>
-                                                  </d>
+                                                  </div>
                                                 </div>
                                               </div>
                                 </div>
@@ -221,5 +292,42 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/mini-event-calendar.min.js"></script>
+
+	<script>
+            var sameDaylastWeek = new Date().setDate(new Date().getDate() - 7);
+            var someDaynextMonth = new Date().setDate(new Date().getDate() + 31);
+    
+            // All dates should be provided in timestamps
+                var sampleEvents = [
+                {
+                    title: "jQueryScript.Net",
+                    date: sameDaylastWeek, // Same day as today, last week
+                    link: "#"
+                },
+                {
+                    title: "Today Event",
+                    date: new Date().getTime(), // Today
+                    link: "#"
+                },
+                {
+                    title: "CSSScript.Com",
+                    date: someDaynextMonth, // Some day as today, next month
+                    link: "#"
+                }
+                ];
+    
+            $(document).ready(function(){
+                $("#calendar").MEC({
+                    events: sampleEvents
+                });
+    
+                // Make calendar start on monday
+                $("#calendar2").MEC({
+                    from_monday: true,
+                    events: sampleEvents
+                });
+            });
+        </script>
 </body>
 </html>
